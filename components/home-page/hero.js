@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './hero.module.css';
-import Image from 'next/image'
+import Image from "next/legacy/image"
 
 function Hero() {
     return (
@@ -14,7 +14,7 @@ function Hero() {
                     priority={true}
                 />
             </div>
-            <h1>Hi, I'm Max</h1>
+            <h1>Hi, I'm Oteng</h1>
             <p>
                 I blog about web development - especially frontend frameworks like
                 Angular or React.

@@ -45,6 +45,7 @@ function ContactForm () {
         name: enteredName,
         message: enteredMessage,
       });
+
       setRequestStatus('success');
       setEnteredMessage('');
       setEnteredEmail('');
@@ -53,7 +54,9 @@ function ContactForm () {
       setRequestError(error.message);
       setRequestStatus('error');
     }
+
   }
+
   let notification;
   if (requestStatus === 'pending') {
     notification = {

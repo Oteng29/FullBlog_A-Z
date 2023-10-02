@@ -24,7 +24,7 @@ async function handler(req, res) {
         let client;
 
         try {
-            const client = await MongoClient.connect(
+             client = await MongoClient.connect(
                 'mongodb+srv://fullblog:uoRkZr8d0adzemdj@cluster0.qkojddi.mongodb.net/my-site?retryWrites=true&w=majority'
             );
         } catch (error) {

@@ -51,7 +51,7 @@ function PostContent(props) {
     return (
         <article className={classes.content}>
             <PostHeader title={props.title} image={imagePath} />
-            <ReactMarkdown renderers={customRenderers}>
+            <ReactMarkdown components={customRenderers}>
                 {post.content}
             </ReactMarkdown>
 
